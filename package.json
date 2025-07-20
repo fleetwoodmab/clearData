@@ -3,8 +3,6 @@
     "@11ty/eleventy": "^3.1.2"
   },
   "scripts": {
-    "build:css": "postcss src/css/styles.css -o dist/css/styles.css",
-    "watch:css": "postcss src/css/styles.css -o dist/css/styles.css --watch",
     "build": "npm run build:css && eleventy",
     "start": "npm run build:css && concurrently \"npm run watch:css\" \"eleventy --serve\""
   },
