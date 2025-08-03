@@ -4,11 +4,11 @@
       <a href="/{{ lang }}/" class="logo">Clear Data Consultants</a>
       <nav class="main-nav">
         <ul>
-          <li><a href="/{{ lang }}/about">{{ translations[lang].about }}</a></li>
-          <li><a href="/{{ lang }}/mission">{{ translations[lang].ourMission }}</a></li>
-          <li><a href="/{{ lang }}/location">{{ translations[lang].location }}</a></li>
+          <li><a href="/{{ lang }}/{{ translations[lang].aboutNav }}">{{ translations[lang].about }}</a></li>
+          <li><a href="/{{ lang }}/{{ translations[lang].servicesNav }}">{{ translations[lang].ourMission }}</a></li>
+          <li><a href="/{{ lang }}/{{ translations[lang].networkNav }}">{{ translations[lang].location }}</a></li>
           <li><a href="/{{ lang }}/contact">{{ translations[lang].contact }}</a></li>
-          <li><a href="/{{ lang }}/careers">{{ translations[lang].careers }}</a></li>
+          <li><a href="/{{ lang }}/{{ translations[lang].careersNav }}">{{ translations[lang].careers }}</a></li>
           <li><a href="{{ langLinks.en or '/en/' }}" {% if lang == 'en' %}aria-current="page"{% endif %}>EN</a></li>
           <li> <a href="{{ langLinks.fr or '/fr/' }}" {% if lang == 'fr' %}aria-current="page"{% endif %}>FR</a></li>
         </ul>
